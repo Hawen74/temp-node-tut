@@ -33,8 +33,18 @@ app.get('/status', (req, res) => {
 });
 
 // GET /greet?name=Alice  →  query string parameter
+// Escape user input before embedding it in HTML to prevent XSS.
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 app.get('/greet', (req, res) => {
-  const name = req.query.name || 'World';
+  const name = escapeHtml(req.query.name || 'World');
   res.send(`Hello, ${name}!`);
 });
 
