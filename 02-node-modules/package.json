@@ -1,0 +1,12 @@
+{
+  "name": "02-node-modules",
+  "version": "1.0.0",
+  "description": "Node.js modules tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
+  }
+}

@@ -1,0 +1,5 @@
+This is a sample text file used by the 03-node-file-system tutorial examples.
+
+Line 1: The quick brown fox jumps over the lazy dog.
+Line 2: Node.js makes it easy to work with the filesystem.
+Line 3: Use fs.readFile for async reads and fs.readFileSync for sync reads.

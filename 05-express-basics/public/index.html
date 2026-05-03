@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Express Basics</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; line-height: 1.6; }
+    a { color: #0070f3; }
+    code { background: #f4f4f4; padding: 0.1em 0.3em; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Express Basics Tutorial</h1>
+  <p>This page is served as a <strong>static file</strong> from the <code>public/</code> directory using <code>express.static()</code>.</p>
+
+  <h2>Example Routes</h2>
+  <ul>
+    <li><a href="/hello">GET /hello</a> – plain text response</li>
+    <li><a href="/json">GET /json</a> – JSON response</li>
+    <li><a href="/status">GET /status</a> – 202 status code</li>
+    <li><a href="/greet?name=Alice">GET /greet?name=Alice</a> – query string</li>
+    <li><a href="/missing">GET /missing</a> – 404 response</li>
+  </ul>
+</body>
+</html>
